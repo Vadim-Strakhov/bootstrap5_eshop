@@ -1,0 +1,24 @@
+@media only screen and (min-width: 992px) {
+    .header-bottom {
+        & .navbar {
+            & .dropdown-menu-end {
+                margin-left: 0;
+                border: 0;
+            }
+            & .nav-link {
+                padding: 1rem;
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 992px) {
+    .header-bottom {
+        & .navbar {
+            & .dropdown-menu {
+                padding-left: 1rem;
+            }
+        }
+    }
+}

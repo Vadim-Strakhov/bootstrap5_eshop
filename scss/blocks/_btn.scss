@@ -1,0 +1,16 @@
+.btn {
+    border-radius: 0;
+}
+
+.btn-outline-warning {
+    &:hover {
+        color: rgba(var(--bs-dark-rgb), .8);
+    }
+}
+
+.cart-buttons .btn {
+    transition: all .3s;
+    &:hover {
+        border: 1px solid rgba(var(--bs-dark-rgb), .8);
+    }
+}
