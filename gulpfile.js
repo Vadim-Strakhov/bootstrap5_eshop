@@ -3,6 +3,7 @@ const browserSync = require('browser-sync');
 const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCss = require('gulp-clean-css');
+const rename = require("gulp-rename");
 
 gulp.task('server', function(){
 
@@ -20,6 +21,9 @@ gulp.task('styles', function() {
         .pipe(sass())
         .pipe(autoprefixer())
         .pipe(cleanCss())
+        .pipe(rename({
+            suffix: '.min'
+        }))
         .pipe(gulp.dest('assets/css/'))
         .pipe(browserSync.stream());
 })

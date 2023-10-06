@@ -1,11 +1,11 @@
 .form-control {
     border-radius: 0;
     &:focus {
-        color: rgba(var(--bs-dark-rgb), .8);
-        border-color: var(--bs-warning);
+        color: $gray-700;
+        border-color: $yellow-400;
         box-shadow: none; 
     }
     &::placeholder {
-        color: var(--bs-tertiary-color);
+        color: $gray-500;
     }
 }

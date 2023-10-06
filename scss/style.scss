@@ -1,6 +1,16 @@
-@import 'libs/bootstrap-reboot.min';
+@import "../node_modules/bootstrap/scss/bootstrap-reboot.scss";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-@import 'libs/bootstrap.min';
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+
+:root {
+    --bg-color: #f5f5f5; // $gray-200
+    --text-color: #6c757d; // $gray-700
+    --accent-color: #ffd333; // $yellow-400
+    --contrast-color: #3d464d; // $gray-700
+    --gray-color: #ccc;
+}
 
 html, body {
     height: 100%;
@@ -9,6 +19,8 @@ html, body {
 body {
     min-width: 320px;
     font-family: 'Roboto', sans-serif;
+    background-color: $gray-200;
+    color: $gray-700;
 }
 .wrapper {
     min-height: 100%;
@@ -21,7 +33,7 @@ main.main {
 }
 
 a {
-    color: rgba(var(--bs-dark-rgb), .8);
+    color: $gray-700;
     text-decoration: underline;
     &:hover {
         text-decoration: none;
@@ -33,11 +45,13 @@ img {
     height: auto;
 }
 
-.offcanvas {
-    transition: all .3s;
-}
 
 @import 'blocks/btn';
 @import 'blocks/form';
 @import 'blocks/header';
+@import 'blocks/carousel';
+@import 'blocks/advantages';
+@import 'blocks/product_card';
+
+
 @import 'blocks/media';

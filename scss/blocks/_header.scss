@@ -1,9 +1,15 @@
-.header-top-phone a {
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
+.header-top {
+    & .btn {
+        background-color: $white;
+    }
+    &-phone a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
+    
 
 ul.social-icons {
     list-style: none;
@@ -13,8 +19,8 @@ ul.social-icons {
         margin-right: 10px;
     }
     & a {
-        background-color: var(--bs-warning);
-        color: rgba(var(--bs-dark-rgb), .8);
+        background-color: $yellow-400;
+        color: $gray-700;
         width: 30px;
         height: 30px;
         line-height: 30px;
@@ -23,8 +29,8 @@ ul.social-icons {
         text-align: center;
         transition: all 0.3s;
         &:hover {
-            background-color: rgba(var(--bs-dark-rgb), .8);
-            color: var(--bs-warning);
+            background-color: $gray-700;
+            color: $yellow-400;
         }
     }
 }
@@ -32,10 +38,10 @@ ul.social-icons {
 .header-logo {
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--bs-warning);
     transition: all .3s;
+    color: $yellow-400;
     &:hover {
-        color: rgba(var(--bs-dark-rgb), .8);
+        color: $gray-700;
     }
 }
 
@@ -43,27 +49,46 @@ ul.social-icons {
     border-radius: 0;
 }
 
+.offcanvas {
+    transition: all .5s;
+}
+
 .header-bottom {
-    border-top: 3px solid var(--bs-warning);
+    border-top: 3px solid $yellow-400;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
     & .nav-item:first-child {
         & .nav-link {
             padding-left: 0;
-            &.active {
-                color: var(--bs-warning);
-            }
         }
     }
     & .navbar {
+        background-color: $gray-700;
         & .dropdown-menu {
+            background-color: $gray-700;
             margin-top: 7px;
         }
         & .nav-link {
-            color: var(--bs-emphasis-color);
+            color: $white;
             letter-spacing: .1rem;
             transition: all .3s;
             &:hover {
-                color: var(--bs-warning);
+                color: $yellow-400;
+            }
+            &.active {
+                color: $yellow-400;
+            }
+        }
+    }
+}
+
+.header-bottom {
+    &.headernav-scroll  {
+        & .navbar {
+            .offcanvas:not(.show) {
+                & .nav-link {
+                    padding-top: 0.3rem;
+                    padding-bottom: 0.3rem;
+                }
             }
         }
     }
