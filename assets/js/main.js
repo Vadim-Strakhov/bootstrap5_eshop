@@ -22,5 +22,8 @@ $(document).ready(function () {
                 items: 4,
             },
         },
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
     });
 });
