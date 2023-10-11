@@ -1,15 +1,23 @@
-@import "../node_modules/bootstrap/scss/bootstrap-reboot.scss";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import "../node_modules/bootstrap/scss/bootstrap-reboot";
+@import "libs/fonts";
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/variables-dark";
+
+@import "../fontawesome/scss/fontawesome";
+@import "../fontawesome/scss/solid";
+@import "../fontawesome/scss/brands";
+
+@import "../node_modules/owl.carousel/src/scss/owl.carousel.scss";
+@import "../node_modules/owl.carousel/src/scss/owl.theme.default.scss";
+
 
 :root {
     --bg-color: #f5f5f5; // $gray-200
     --text-color: #6c757d; // $gray-700
     --accent-color: #ffd333; // $yellow-400
     --contrast-color: #3d464d; // $gray-700
-    --gray-color: #ccc;
+    --gray-color: #ccc; // $gray-500
 }
 
 html, body {
@@ -52,6 +60,5 @@ img {
 @import 'blocks/carousel';
 @import 'blocks/advantages';
 @import 'blocks/product_card';
-
 
 @import 'blocks/media';
