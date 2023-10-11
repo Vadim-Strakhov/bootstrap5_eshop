@@ -8,16 +8,16 @@ const rename = require('gulp-rename');
 gulp.task('server', function () {
     browserSync({
         server: {
-            baseDir: './',
+            baseDir: 'src',
         },
     });
 
-    gulp.watch('*.html').on('change', browserSync.reload);
+    gulp.watch('src/*.html').on('change', browserSync.reload);
 });
 
 gulp.task('styles', function () {
     return gulp
-        .src('scss/*.scss')
+        .src('src/scss/*.scss')
         .pipe(sass())
         .pipe(autoprefixer())
         .pipe(cleanCss())
@@ -26,13 +26,13 @@ gulp.task('styles', function () {
                 suffix: '.min',
             })
         )
-        .pipe(gulp.dest('assets/css/'))
+        .pipe(gulp.dest('src/assets/css/'))
         .pipe(browserSync.stream());
 });
 
 gulp.task('watch', function () {
-    gulp.watch('scss/*/*.scss', gulp.parallel('styles'));
-    gulp.watch('scss/*.scss', gulp.parallel('styles'));
+    gulp.watch('src/scss/*/*.scss', gulp.parallel('styles'));
+    gulp.watch('src/scss/*.scss', gulp.parallel('styles'));
 });
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
