@@ -1,0 +1,34 @@
+.btn {
+    border-radius: 0;
+    &-warning {
+        background-color: $yellow-400;
+        color: $gray-700;
+    }
+    &-outline-warning {
+        border-color: $yellow-400;
+        &:hover {
+            background-color: $yellow-400;
+            color: $gray-700;
+        }
+    }
+}
+
+.btn-outline-warning {
+    border-color: $yellow-400;
+    &:hover {
+        border-color: $yellow-400;
+        color: $gray-700;
+    }
+}
+
+.cart-buttons .btn {
+    color: $gray-700;
+    transition: all .3s;
+    &:hover {
+        border: 1px solid $gray-700;
+    }
+}
+
+span.badge {
+    background-color: $yellow-400;
+}

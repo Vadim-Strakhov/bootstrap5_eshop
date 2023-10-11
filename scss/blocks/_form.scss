@@ -1,0 +1,11 @@
+.form-control {
+    border-radius: 0;
+    &:focus {
+        color: $gray-700;
+        border-color: $yellow-400;
+        box-shadow: none; 
+    }
+    &::placeholder {
+        color: $gray-500;
+    }
+}
