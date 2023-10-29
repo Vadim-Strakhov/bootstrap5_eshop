@@ -1,0 +1,9 @@
+.about-us {
+    background-color: $white;
+    & .section-title {
+        & span {
+            background-color: $white;
+            // z-index: 0;
+        }
+    }
+}
