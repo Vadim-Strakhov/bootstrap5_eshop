@@ -15,12 +15,14 @@ section {
             top: 50%;
             left: 0;
             border-top: 1px dashed;
-            z-index: -1;
+            z-index: 0;
             border-top: 1px dashed $gray-700;
         }
         & span {
             padding-right: 1rem;
             background-color: $gray-200;
+            position: relative;
+            z-index: 1;
         }
     }
 }
