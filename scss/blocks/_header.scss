@@ -9,7 +9,6 @@
         }
     }
 }
-    
 
 ul.social-icons {
     list-style: none;
@@ -37,9 +36,8 @@ ul.social-icons {
 
 .header-logo {
     text-decoration: none;
-    text-transform: uppercase;
-    transition: all .3s;
-    color: $yellow-400;
+    transition: all 0.3s;
+    color: $yellow-500;
     &:hover {
         color: $gray-700;
     }
@@ -50,7 +48,7 @@ ul.social-icons {
 }
 
 .offcanvas {
-    transition: all .5s;
+    transition: all 0.5s;
 }
 
 .header-bottom {
@@ -69,8 +67,8 @@ ul.social-icons {
         }
         & .nav-link {
             color: $white;
-            letter-spacing: .1rem;
-            transition: all .3s;
+            letter-spacing: 0.1rem;
+            transition: all 0.3s;
             &:hover {
                 color: $yellow-400;
             }
@@ -82,7 +80,7 @@ ul.social-icons {
 }
 
 .header-bottom {
-    &.headernav-scroll  {
+    &.headernav-scroll {
         & .navbar {
             .offcanvas:not(.show) {
                 & .nav-link {

@@ -1,0 +1,22 @@
+.footer {
+    background-color: $gray-700;
+    padding: 50px 0;
+    color: $white;
+    & h4 {
+        color: $yellow-400;
+    }
+    & a {
+        color: $white;
+        text-decoration: none;
+        transition: all 0.3s;
+        &:hover {
+            color: $gray-700;
+        }
+    }
+    &-icons {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        font-size: 20px;
+    }
+}
