@@ -1,4 +1,4 @@
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
     .header-bottom {
         & .navbar {
             & .dropdown-menu-end {
@@ -10,15 +10,22 @@
             }
         }
     }
-    
 }
 
-@media only screen and (max-width: 991px) {
+@media (max-width: 991px) {
     .header-bottom {
         & .navbar {
             & .dropdown-menu {
                 padding-left: 1rem;
             }
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .header-top-phone {
+        a {
+            font-size: 13px;
         }
     }
 }

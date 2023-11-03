@@ -1,5 +1,5 @@
 .card {
-    transition: all .3s;
+    transition: all 0.3s;
     border: 1px solid $gray-500;
     &:hover {
         box-shadow: 0 10px 20px -15px rgba(0, 0, 0, 0.75);
@@ -9,7 +9,14 @@
         max-width: 250px;
         margin: 0 auto;
     }
+    img.label {
+        min-height: 50px;
+        max-height: 50px;
+    }
     & .card-body {
+        h5 {
+            margin-top: 10px;
+        }
         p {
             height: 3rem;
             overflow: hidden;

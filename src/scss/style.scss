@@ -1,26 +1,26 @@
-@import "../../node_modules/bootstrap/scss/bootstrap-reboot";
-@import "libs/fonts";
-@import "../../node_modules/bootstrap/scss/bootstrap";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/variables-dark";
+@import '../../node_modules/bootstrap/scss/bootstrap-reboot';
+@import 'libs/fonts';
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/variables-dark';
 
-@import "../fontawesome/scss/fontawesome";
-@import "../fontawesome/scss/solid";
-@import "../fontawesome/scss/brands";
+@import '../fontawesome/scss/fontawesome';
+@import '../fontawesome/scss/solid';
+@import '../fontawesome/scss/brands';
 
-@import "../../node_modules/owl.carousel/src/scss/owl.carousel.scss";
-@import "../../node_modules/owl.carousel/src/scss/owl.theme.default.scss";
-
+@import '../../node_modules/owl.carousel/src/scss/owl.carousel.scss';
+@import '../../node_modules/owl.carousel/src/scss/owl.theme.default.scss';
 
 :root {
     --bg-color: #f5f5f5; // $gray-200
     --text-color: #6c757d; // $gray-700
-    --accent-color: #ffd333; // $yellow-400
+    --accent-color: #ffd333; // $yellow-400 $red-400
     --contrast-color: #3d464d; // $gray-700
     --gray-color: #ccc; // $gray-500
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -53,7 +53,6 @@ img {
     height: auto;
 }
 
-
 @import 'blocks/btn';
 @import 'blocks/form';
 @import 'blocks/header';
@@ -61,5 +60,6 @@ img {
 @import 'blocks/advantages';
 @import 'blocks/product_card';
 @import 'blocks/aboutus';
+@import 'blocks/footer';
 
 @import 'blocks/media';

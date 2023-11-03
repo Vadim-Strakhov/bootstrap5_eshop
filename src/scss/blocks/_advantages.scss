@@ -10,7 +10,7 @@ section {
         font-weight: 700;
         &::after {
             position: absolute;
-            content: "";
+            content: '';
             width: 100%;
             top: 50%;
             left: 0;
@@ -35,13 +35,13 @@ section {
         display: flex;
         flex-direction: column;
         height: 100%;
-        transition: all .3s;
+        transition: all 0.3s;
         &:hover {
-            box-shadow: 0 15px 30px -20px rgba(0, 0, 0, .5);
+            box-shadow: 0 15px 30px -20px rgba(0, 0, 0, 0.5);
         }
     }
     & i {
         font-size: 4.375rem;
-        color: $yellow-400;
+        color: $gray-700;
     }
 }
