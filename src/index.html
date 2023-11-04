@@ -37,14 +37,14 @@
                                     <div class="btn-group me">
                                         <div class="dropdown">
                                             <button class="btn btn-sm dropdown-toggle" type="submit" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Account
+                                                Личный кабинет
                                             </button>
                                             <ul class="dropdown-menu">
                                                 <li>
-                                                    <a class="dropdown-item" href="#">Sign In</a>
+                                                    <a class="dropdown-item" href="#">Вход</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#">Sign Up</a>
+                                                    <a class="dropdown-item" href="#">Регистрация</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -52,7 +52,7 @@
                                     <div class="btn-group">
                                         <div class="dropdown">
                                             <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                EN
+                                                EN eader-mi
                                             </button>
                                             <ul class="dropdown-menu">
                                                 <li>
@@ -76,18 +76,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <a href="#" class="header-logo h1">Wardrobe Elegance</a>
                             </div>
-                            <div class="col-lg-4 order-md-2 cart-buttons text-end d-none d-lg-block">
-                                <a href="#" class="btn p-1 text-dark-emphasis">
-                                    <i class="fa-solid fa-heart"></i>
-                                    <span class="badge text-bg-warning border border-warning rounded-circle">3</span>
-                                </a>
-
-                                <button class="btn p-1 text-dark-emphasis" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                    <span class="badge text-bg-warning border border-warning rounded-circle">5</span>
-                                </button>
-                            </div>
-                            <div class="col-lg-4 col-sm-6 order-md-1 mt-2 mt-md-0">
+                            <div class="col-sm-6 mt-2 mt-md-0">
                                 <form action="#">
                                     <div class="input-group">
                                         <input
@@ -104,29 +93,6 @@
                                     </div>
                                 </form>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasCartLabel">Cart</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div>Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.</div>
-                        <div class="dropdown mt-3">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">Dropdown button</button>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="#">Action</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -218,19 +184,48 @@
                             </div>
                         </div>
 
-                        <div class="d-lg-none">
-                            <a href="#" class="btn p-1 text-dark-emphasis">
+                        <div class="cart-buttons">
+                            <a class="btn p-1">
                                 <i class="fa-solid fa-heart"></i>
                                 <span class="badge text-bg-warning border border-warning rounded-circle">3</span>
                             </a>
 
-                            <button class="btn p-1 text-dark-emphasis" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart">
+                            <button class="btn p-1" id="cart-open" type="button" data-bs-toggle="offcanvas!!!" data-bs-target="#offcanvasCart">
                                 <i class="fa-solid fa-cart-shopping"></i>
                                 <span class="badge text-bg-warning border border-warning rounded-circle">5</span>
                             </button>
                         </div>
                     </div>
                 </nav>
+            </div>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasCartLabel">Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div>
+                        Кнопки ниже можно понажимать :)
+                        <br />
+                        <br />
+                        В правом нижнем углу появится удобная желтая стрелочка, чтобы быстро подняться наверх.
+                    </div>
+                    <div class="dropdown mt-3">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">Информация</button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item closecart" href="#about" data-href="about">О нас</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item closecart" href="#products" data-href="products">Каталог</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item closecart" href="#map" data-href="map">Показать на карте</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <main class="main">
@@ -338,7 +333,7 @@
                     </div>
                 </section>
 
-                <div class="featured-product">
+                <div class="featured-product" id="products">
                     <div class="container-fluid">
                         <div class="row mb-5">
                             <div class="col-12">
@@ -583,7 +578,7 @@
                     </div>
                 </section>
 
-                <section class="about-us">
+                <section class="about-us" id="about">
                     <div class="container-fluid">
                         <div class="row mb-5">
                             <div class="col-12">
@@ -625,6 +620,7 @@
                         style="color: #eee; font-size: 12px; position: absolute; top: 14px"
                         >Торговый центр в Москве</a
                     ><iframe
+                        id="map"
                         src="https://yandex.ru/map-widget/v1/?ll=37.619773%2C55.760833&mode=search&oid=1334551857&ol=biz&z=18&scroll=false"
                         width="100%"
                         height="400"
@@ -635,16 +631,14 @@
                 </div>
             </main>
 
-            <footer class="footer">
+            <footer class="footer" id="footer">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-3 col-6">
                             <h4>Информация</h4>
                             <ul class="list-unstyled">
-                                <li><a href="#">Главная</a></li>
-                                <li><a href="#">Оплата</a></li>
-                                <li><a href="#">Доставка</a></li>
-                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Наш журнал моды</a></li>
                             </ul>
                         </div>
                         <div class="col-md-3 col-6">
@@ -683,6 +677,10 @@
                 </div>
             </footer>
         </div>
+
+        <button id="top">
+            <i class="fa-solid fa-angles-up"></i>
+        </button>
 
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/owl.carousel.min.js"></script>

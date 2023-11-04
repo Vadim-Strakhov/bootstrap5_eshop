@@ -22,10 +22,9 @@
 }
 
 .cart-buttons .btn {
-    color: $gray-700;
-    transition: all .3s;
+    transition: all 0.3s;
     &:hover {
-        border: 1px solid $gray-700;
+        color: $gray-500;
     }
 }
 

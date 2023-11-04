@@ -24,7 +24,7 @@ gulp.task('styles', function () {
         .pipe(
             rename({
                 suffix: '.min',
-            })
+            }),
         )
         .pipe(gulp.dest('src/assets/css/'))
         .pipe(browserSync.stream());
