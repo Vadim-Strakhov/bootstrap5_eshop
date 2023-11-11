@@ -1,3 +1,15 @@
+document.querySelectorAll('a').forEach((item) => {
+    item.addEventListener('click', (e) => {
+        const hrefValue = item.getAttribute('href');
+        if (hrefValue && hrefValue.startsWith('#')) {
+            e.preventDefault();
+        } else {
+            return;
+        }
+        
+    })
+})
+
 window.addEventListener('scroll', function () {
     document.getElementById('header-nav').classList.toggle('headernav-scroll', window.scrollY > 135);
 });
